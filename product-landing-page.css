@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+li, a{
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    font-size: 15px;
+
+}
+
+a:hover{
+    color: gray
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: whitesmoke;
+}
+
+nav .logo-div img{
+    width: 70px;
+    height: 50px;
+}
+
+.banner-section{
+    background-color: rgb(6, 6, 64);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* align-items: center;  */
+    padding: 10px
+
+}
+
+.img-box{
+    height: 100%;
+    background-color: black;
+    /* border: 1px solid #000; */
+}
+
+.banner-section .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+ul {
+    display: flex;
+    gap: 20px
+
+}
+
+.features{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.features .wrapper{
+    width: 700px; 
+}
+
+.features .wrapper h1 {
+    padding: 20px;
+    color: rgb(6, 6, 64)
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.feature .image-div img{
+    width: 100px;
+    height: 100px
+}
+
+.video-div{
+    display: flex;
+    justify-content: center;
+    padding: 0px
+}
+
+.video-div video{
+    height: 500px;
+    width: 500px;
+    
+}
+
+.pricing-section .wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 100px
+}
+
+.pricing-section h1{
+    text-align: center;
+    color: rgb(6, 6, 64) 
+}
+
+.pricing-section .wrapper .price-item{
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.price-item .title{
+    background-color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px
+}
+
+.price-item .price{
+    text-align: center;
+    font-weight: bold;
+}
+
+.description {
+    text-align: center;
+}
+
+.select-button-div{
+    display: flex;
+    justify-content: center;
+}
+
+.select-button-div button{
+    padding: 5px 20px;
+    margin: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-section{
+    background-color:whitesmoke; ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    font-size: 20px;
+}
+
+form input{
+    padding: 7px 60px
+}
+
+.contact-section button{
+    padding: 5px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 20px;
+    background-color:black ;
+    color: white;
+    padding: 15px;
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width:500px){
+    nav{
+        padding: 0px 10px
+    }
+
+    nav .menu-div{
+        display: none;
+    }
+
+    .banner-section{
+        display: flex;
+        flex-direction: column;
+        height:max-content;
+        width: 100%
+    }
+
+    .features{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .features .wrapper{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .features .wrapper .feature{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px
+    }
+
+    .video-div video{
+        /* height: 500px; */
+        width: 100%;
+        
+    }
+
+    .pricing-section .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0px 10px
+    }
+
+    .pricing-section .wrapper .price-item{
+        /* border: 1px solid #000;
+        display: flex;
+        flex-direction: column;
+        gap: 20px */
+
+        width: 100%
+    }
+}
+
+@media screen and (max-width:750px){
+    .banner-section{
+        display: flex;
+        flex-direction: column;
+        height:max-content;
+        width: 100%
+    }
+
+    .pricing-section .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0px 10px
+    }
+}
